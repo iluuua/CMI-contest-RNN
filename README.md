@@ -12,7 +12,7 @@ The project implements a multivariate time-series classifier (RNN + attention po
 - Provides a Kaggle-compatible notebook that implements the `predict(sequence, demographics)` inference function and runs the official evaluation gateway locally for validation.  
 RNN + attention is a practical and proven choice for activity / time-series classification tasks.
 
-### Repo layout
+## Repo layout
 ```
 .
 ├─ conf/                                       # runtime config files (data paths, model & trainer params)
@@ -26,7 +26,7 @@ RNN + attention is a practical and proven choice for activity / time-series clas
 ├─ requirements.txt
 ├─ outputs/                                    # training run directories and saved artifacts
 ```
-### Quickstart
+## Quickstart
 1. `pip install -r requirements.txt`
 2. `python train.py trainer.batch_size=64 trainer.epochs=30`
 3. `python predict.py --artifacts outputs/<run> --csv ./test.csv --out submission.csv`
