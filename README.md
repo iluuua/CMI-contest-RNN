@@ -2,7 +2,7 @@
 A compact reproducible training + inference pipeline for the CMI sensor-data contest. Implements an RNN + attention classifier, Hydra-based config, training script, inference script and a Kaggle-ready notebook.
 
 ## Repo Layout
-
+.
 ├─ conf/                       # hydra YAML configs (data, model, trainer)
 │  ├─ config.yaml
 │  └─ data.yaml
