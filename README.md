@@ -3,19 +3,16 @@ A compact reproducible training + inference pipeline for the CMI sensor-data con
 
 ## Repo Layout
 .
-├─ conf/                       # hydra YAML configs (data, model, trainer)
-│  ├─ config.yaml
-│  └─ data.yaml
-├─ train.py                    # Hydra entrypoint for training
-├─ predict.py                  # CLI for batch inference (writes CSV)
-├─ notebook-solution.ipynb     # Kaggle notebook (train/test or inference-server)
-├─ src/                        # project package (model, data, utils)
-│  ├─ model.py
-│  ├─ data.py
-│  └─ utils.py
+├─ conf/                                       # hydra config groups
+│ ├─ config.yaml
+│ ├─ data.yaml
+│ ├─ model.yaml
+│ └─ trainer.yaml
+├─ train.py                                    # Hydra entrypoint: trains model, saves artifacts
+├─ predict.py                                  # Batch inference CLI / helper for local prediction
+├─ notebook-solution.ipynb                     # Kaggle-ready notebook 
 ├─ requirements.txt
-├─ README.md
-└─ outputs/                    # runtime outputs (Hydra run dirs)
+├─ outputs/                                    # Hydra run dirs and artifacts 
 
 ## Quickstart
 1. `pip install -r requirements.txt`
