@@ -1,0 +1,8 @@
+name: gru_attn
+rnn_type: gru
+hidden_size: 128
+num_layers: 2
+bidirectional: true
+input_dropout: 0.1
+attn_dropout: 0.1
+fc_dropout: 0.2

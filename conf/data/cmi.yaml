@@ -1,0 +1,9 @@
+root: ${hydra:runtime.cwd}\conf\data\dataset
+train_csv: ${data.root}\train.csv
+id_col: sequence_id
+label_col: gesture
+pad_percentile: 95
+pad_mode: post
+trunc_mode: post
+val_size: 0.2
+shuffle: true

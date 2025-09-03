@@ -1,0 +1,8 @@
+name: lstm_attn
+rnn_type: lstm
+input_dropout: 0.1
+hidden_size: 128
+num_layers: 2
+bidirectional: true
+attn_dropout: 0.1
+fc_dropout: 0.2

@@ -1,0 +1,30 @@
+data:
+  root: ${hydra:runtime.cwd}\conf\data\dataset
+  train_csv: ${data.root}\train.csv
+  id_col: sequence_id
+  label_col: gesture
+  pad_percentile: 95
+  pad_mode: post
+  trunc_mode: post
+  val_size: 0.2
+  shuffle: true
+model:
+  name: lstm_attn
+  rnn_type: lstm
+  input_dropout: 0.1
+  hidden_size: 128
+  num_layers: 2
+  bidirectional: true
+  attn_dropout: 0.1
+  fc_dropout: 0.2
+trainer:
+  batch_size: 128
+  epochs: 30
+  lr: 0.0003
+  weight_decay: 0.0001
+  early_stop_patience: 7
+  num_workers: 4
+  use_cuda: true
+  grad_clip: 1.0
+  class_weight: null
+seed: 42

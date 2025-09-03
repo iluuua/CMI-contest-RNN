@@ -1,0 +1,9 @@
+batch_size: 128
+epochs: 30
+lr: 3e-4
+weight_decay: 1e-4
+early_stop_patience: 7
+num_workers: 4
+use_cuda: true
+grad_clip: 1.0
+class_weight: null     
